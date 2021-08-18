@@ -29,3 +29,7 @@ anyhow = "1.0.43"
 bytesize = "1.1.0"
 thiserror = "1.0.26"
 dunce = "1.0.2"
+
+[patch."https://github.com/probe-rs/probe-rs"]
+probe-rs = { git = "https://github.com/twelho/probe-rs" }
+probe-rs-cli-util = { git = "https://github.com/twelho/probe-rs", default-features = false, features=["anyhow"] }
